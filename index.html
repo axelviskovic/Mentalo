@@ -16,7 +16,7 @@
         <img src="images/logo.png" id="logoMentalo" alt="logo"/>
 
         <div class="containerAddPlayer">
-          <input placeholder="Entrer un joueur" class="inputAddPlayer"></input>
+          <input placeholder="Entrer un joueur" maxlength="20" class="inputAddPlayer"></input>
           <button class="buttonAddPlayer"><p>+</p></button>
           <div class="beerCountContainer">
             <img id="firstDot" class="beerImg" src="images/beer.png"/>
@@ -26,9 +26,10 @@
         </div>
 
         <div class="containerlistPlayer">
-          <div class="rowPlayerList">
+          <div class="rowPlayerListMain">
             <h2 class="subTitle">Joueurs</h2>
             <h2 class="subTitle">Niveau</h2>
+            <div></div>
           </div>
         </div>
 
@@ -43,6 +44,11 @@
         <!--<img src="images/settings.png" id="settings"> -->
       </div>
       <h1 id="playerNameTitle">Jeu</h1>
+      <div class="levelIngame">
+        <img class="beerImg" src="images/beer.png"/>
+        <img class="beerImg" src="images/beer.png"/>
+        <img class="beerImg" src="images/beer.png"/>
+      </div>
       <h5 class="question"></h5>
       <div class="button1 buttonSeeResult"><h1 class="btnText">Continuer</h1></div>
       <div class="listeScoreGame"></div>
@@ -85,7 +91,7 @@
       <h5>Comment jouer ?</h5>
     </div>
 
-    <div class="howToPlayContainer">
+    <!-- <div class="howToPlayContainer">
       <img src="images/close.png" class="closeHowToPlay">
       <h1>Comment jouer à Mentalo&nbsp;?</h1>
       <div class="chooseSectionHow">
@@ -117,13 +123,13 @@
         <p>Tu ne bois pas d'alcool ? Dans ce cas tu as le choix entre deux gages, à toi de voir lequel tu préfères</p>
         <img src="images/gage3.png">
       </div>
-    </div>
+    </div> -->
 
-    <!-- CHANGE PLAYERS LEVEL -->
+    <!-- CHANGE PLAYERS LEVEL
     <div class="editPlayerContainer">
         <h1>Modifier</h1>
         <div class="editPlayerInner">
-          <input class="inputAddPlayer" placeholder="Axel"></input>
+          <input class="inputAddPlayer" placeholder="Axel" maxlength="20"></input>
           <div class="editPlayerLevel">
             <span id="decreasePlayerLevel">-</span>
             <img src="images/level1.png">
@@ -132,7 +138,7 @@
         </div>
         <div class="editPlayerValidation">Valider</div>
         <div class="editPlayerDelete">Supprimer le joueur</div>
-    </div>
+    </div> -->
 
     <script src="scripts/main.js"></script>
   </body>
